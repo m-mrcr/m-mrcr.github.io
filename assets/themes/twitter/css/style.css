@@ -1,4 +1,7 @@
 /* Custom container */
+.body {
+background: #000000; }
+
 .container-narrow {
   margin: 0 auto;
   max-width: 700px; }
