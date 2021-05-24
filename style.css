@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&family=Prompt&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 5pt;
+}
+
+[data-theme="dark"] {
+  --background-color: #000000;
+  --text-color: #fff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+h1 {
+  font-family: "Pattaya", sans-serif;
+  font-size: 72pt;
+}
+
+a#email {
+  font-family: "Prompt", sans-serif;
+  position: fixed;
+  font-size: 14pt;
+  bottom: 3rem;
+  left: 3rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+a#email:hover {
+  text-decoration: underline;
+}
+
+span {
+  transition: color 3s;
+}
+
+span:hover {
+  transition: color 10ms;
+}
+
+.blue:hover {
+  color: blue;
+}
+.red:hover {
+  color: red;
+}
+.pink:hover {
+  color: pink;
+}
+.yellow:hover {
+  color: yellow;
+}
+.purple:hover {
+  color: purple;
+}
+
+checkbox {
+  -webkit-appearance: none;
+  outline: none;
+}
+
+#theme-switcher {
+  -webkit-appearance: none;
+  position: fixed;
+  top: 3rem;
+  right: 2rem;
+  width: 100px;
+  height: 50px;
+  background-image: url(https://i.postimg.cc/857jHw2q/Screenshot-2020-04-16-at-1-07-06-PM.png);
+  background-size: cover;
+  border-radius: 50px;
+  outline: none;
+  transition: background-image 0.9s;
+  box-shadow: 0px 2px 5px 1px gray;
+}
+
+#theme-switcher:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  background-color: navy;
+  border-radius: 50px;
+  transition: all 0.4s;
+  background-color: #f7ca33;
+}
+
+#theme-switcher:checked {
+  background-image: url(https://i.postimg.cc/Hn0nstVK/Screenshot-2020-04-16-at-1-07-19-PM.png);
+  transition: background-image 0.9s;
+}
+
+#theme-switcher:checked:before {
+  transform: translate(100%);
+  background-color: #ecf0f3;
+}
