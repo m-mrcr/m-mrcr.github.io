@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Pattaya&family=Prompt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&family=Cabin:wght@600&display=swap");
 
 * {
   box-sizing: border-box;
@@ -20,6 +20,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 3rem;
+  overflow: hidden;
 }
 
 h1 {
@@ -28,7 +29,7 @@ h1 {
 }
 
 a#email {
-  font-family: "Prompt", sans-serif;
+  font-family: "Cabin", sans-serif;
   position: fixed;
   font-size: 14pt;
   bottom: 3rem;
@@ -45,23 +46,29 @@ span {
   transition: color 3s;
 }
 
-span:hover {
+span:hover,
+span:active {
   transition: color 10ms;
 }
 
-.blue:hover {
+.blue:hover,
+.blue:active {
   color: blue;
 }
-.red:hover {
+.red:hover,
+.red:active {
   color: red;
 }
-.pink:hover {
+.pink:hover,
+.pink:active {
   color: pink;
 }
-.yellow:hover {
+.yellow:hover,
+.yellow:active {
   color: yellow;
 }
-.purple:hover {
+.purple:hover,
+.purple:active {
   color: purple;
 }
 
