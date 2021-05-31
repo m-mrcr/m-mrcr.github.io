@@ -30,9 +30,33 @@ function darkMode() {
   };
 }
 
+// BEGIN HOVER ANIMATIONS
 document.querySelector(".menu-button").addEventListener("click", () => {
   document.querySelector(".circular-menu").classList.toggle("open");
 });
+
+document.body.addEventListener("touchmove", (event) => {
+  const touch = event.touches[0];
+  const newHovered =
+    touch && document.elementFromPoint(touch.pageX, touch.pageY);
+
+  if (newHovered && newHovered.matches("span")) {
+    newHovered.classList.add("hover");
+  }
+
+  const prevHovered = document.querySelectorAll(".hover");
+  for (const elem of prevHovered) {
+    if (elem !== newHovered) elem.classList.remove("hover");
+  }
+});
+
+document.body.addEventListener("touchend", () => {
+  const prevHovered = document.querySelectorAll(".hover");
+  for (const elem of prevHovered) {
+    elem.classList.remove("hover");
+  }
+});
+// END HOVER ANIMATIONS
 
 const items = document.querySelectorAll(".menu a");
 const thetaDelta = Math.PI / 2 / (items.length - 1);
