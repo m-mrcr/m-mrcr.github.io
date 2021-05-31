@@ -39,34 +39,54 @@ span {
   transition: color 3s;
 }
 
-span:hover,
-span:active {
+span.hover {
   transition: color 10ms;
 }
 
-.blue:hover,
-.blue:active {
+.blue.hover {
   color: blue;
 }
 
-.red:hover,
-.red:active {
+.red.hover {
   color: red;
 }
 
-.pink:hover,
-.pink:active {
+.pink.hover {
   color: pink;
 }
 
-.yellow:hover,
-.yellow:active {
+.yellow.hover {
   color: yellow;
 }
 
-.purple:hover,
-.purple:active {
+.purple.hover {
   color: purple;
+}
+
+@media only screen and (hover: hover) {
+  span:hover {
+    transition: color 10ms;
+  }
+
+  .blue:hover {
+    color: blue;
+  }
+
+  .red:hover {
+    color: red;
+  }
+
+  .pink:hover {
+    color: pink;
+  }
+
+  .yellow:hover {
+    color: yellow;
+  }
+
+  .purple:hover {
+    color: purple;
+  }
 }
 
 checkbox {
