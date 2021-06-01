@@ -6,7 +6,7 @@ window.addEventListener("load", () => {
 });
 
 function textEffect() {
-  const container = document.querySelector("#first h1");
+  const container = document.querySelector("#primary-text h1");
   if (!container) return;
   const classNames = ["blue", "red", "pink", "yellow", "purple"];
   const rawString = container.textContent;
