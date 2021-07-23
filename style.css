@@ -90,12 +90,10 @@ span.hover {
 }
 
 checkbox {
-  -webkit-appearance: none;
   outline: none;
 }
 
 #theme-switcher {
-  -webkit-appearance: none;
   position: fixed;
   top: 3rem;
   right: 2rem;
@@ -118,6 +116,7 @@ checkbox {
   width: 50px;
   background-color: navy;
   border-radius: 50px;
+  outline: none;
   transition: all 400ms;
   background-color: #f7ca33;
 }
