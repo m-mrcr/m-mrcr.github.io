@@ -90,10 +90,12 @@ span.hover {
 }
 
 checkbox {
+  -webkit-appearance: none;
   outline: none;
 }
 
 #theme-switcher {
+  -webkit-appearance: none;
   position: fixed;
   top: 3rem;
   right: 2rem;
