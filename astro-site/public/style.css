@@ -1,4 +1,14 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Pattaya&family=Cabin:wght@600&display=swap");
+/* Center #primary-text vertically and horizontally */
+#primary-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
 
 * {
   box-sizing: border-box;

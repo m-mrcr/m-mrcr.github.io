@@ -1,16 +1,39 @@
 ---
-
+// Astro page content only; head and body tags are handled by Astro
 ---
+<head>
+  <title>Martin Mercer</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="/style.css" />
+  <script src="/script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<input id="theme-switcher" type="checkbox" />
+<div id="primary-text">
+  <h1>Hello, I'm Martin!</h1>
+</div>
+
+<nav class="circular-menu">
+  <div class="menu-background"></div>
+  <div class="menu">
+        <a
+          href="https://instagram.com/m_mrcr"
+          class="fa-brands fa-instagram fa-2x"
+        ></a>
+        <a href="https://bsky.app/profile/martinmercer.bsky.social" title="Bluesky" class="fa-brands fa-bluesky fa-2x"></a>
+        <a
+          href="https://linkedin.com/in/martinmercer1"
+          class="fa-brands fa-linkedin fa-2x"
+        ></a>
+        <a href="https://github.com/m-mrcr" class="fa-brands fa-github fa-2x"></a>
+        <a href="mailto:hello@mrtnmrcr.com" class="fa-regular fa-envelope fa-2x"></a>
+        <a href="https://venmo.com/m_mrcr" class="fa-solid fa-dollar-sign fa-2x"></a>
+      </div>
+
+      <a href="#" class="menu-button fa fa-bars fa-2x"></a>
+    </nav>
+  </body>
 </html>
